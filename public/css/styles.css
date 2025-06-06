@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'PokemonSolid';
+  src: url('../fonts/pokemonSolid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.tituloPoke {
+  font-family: 'PokemonSolid', sans-serif;
+  font-size: 2rem;
+  color: #ffc107;
+  position: relative;
+  top: -6px;
+}
+
+.titulo{
+  margin-bottom: 5%;
+   font-weight: bold;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.containerProd{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.bloque{
+  margin-bottom: 7%;
+}
+
+.img-container {
+    width: 100%;
+    max-width: 400px;
+    height: 300px; 
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: calc(100vh - 60px);
+  width: 240px;
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+  z-index: 1000;
+  padding-top: 1rem;
+}
+
+#toggleSidebar{
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  transition: all 0.2s;
+  white-space: nowrap;
+  font-size: 1.4rem;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.sidebar .nav-link i {
+  font-size: 1.2rem;
+}
+
+.sidebar .link-text {
+  margin-left: 10px;
+  transition: opacity 0.3s ease;
+}
+
+/* Para ocultar texto cuando esta colapsado */
+.sidebar.collapsed .link-text {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
